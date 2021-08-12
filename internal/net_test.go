@@ -13,7 +13,7 @@ import (
 
 	netcontext "golang.org/x/net/context"
 
-	basepb "google.golang.org/appengine/internal/base"
+	basepb "github.com/sgtsquiggs/appengine/internal/base"
 )
 
 func TestDialLimit(t *testing.T) {

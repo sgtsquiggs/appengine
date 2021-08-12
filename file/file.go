@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal"
-	aipb "google.golang.org/appengine/internal/app_identity"
+	"github.com/sgtsquiggs/appengine/internal"
+	aipb "github.com/sgtsquiggs/appengine/internal/app_identity"
 )
 
 // DefaultBucketName returns the name of this application's

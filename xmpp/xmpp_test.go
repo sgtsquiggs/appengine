@@ -9,11 +9,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal/aetesting"
-	pb "google.golang.org/appengine/internal/xmpp"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal/aetesting"
+	pb "github.com/sgtsquiggs/appengine/internal/xmpp"
 )
 
 func newPresenceResponse(isAvailable bool, presence pb.PresenceResponse_SHOW, valid bool) *pb.PresenceResponse {

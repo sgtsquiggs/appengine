@@ -8,7 +8,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	netcontext "golang.org/x/net/context"
 )
 

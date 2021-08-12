@@ -26,7 +26,7 @@ Example:
 		log.Infof(c, "Saw record %v", record)
 	}
 */
-package log // import "google.golang.org/appengine/log"
+package log // import "github.com/sgtsquiggs/appengine/log"
 
 import (
 	"errors"
@@ -34,12 +34,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal"
-	pb "google.golang.org/appengine/internal/log"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal"
+	pb "github.com/sgtsquiggs/appengine/internal/log"
 )
 
 // Query defines a logs query.

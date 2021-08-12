@@ -8,8 +8,8 @@ An example test file:
 	import (
 		"testing"
 
-		"google.golang.org/appengine/memcache"
-		"google.golang.org/appengine/aetest"
+		"github.com/sgtsquiggs/appengine/memcache"
+		"github.com/sgtsquiggs/appengine/aetest"
 	)
 
 	func TestFoo(t *testing.T) {

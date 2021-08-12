@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal/aetesting"
-	pb "google.golang.org/appengine/internal/memcache"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal/aetesting"
+	pb "github.com/sgtsquiggs/appengine/internal/memcache"
 )
 
 var errRPC = fmt.Errorf("RPC error")

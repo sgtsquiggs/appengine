@@ -4,7 +4,7 @@
 
 This repository supports the Go runtime on *App Engine standard*.
 It provides APIs for interacting with App Engine services.
-Its canonical import path is `google.golang.org/appengine`.
+Its canonical import path is `github.com/sgtsquiggs/appengine`.
 
 See https://cloud.google.com/appengine/docs/go/
 for more information.
@@ -35,16 +35,16 @@ should not directly import any package under `internal`.
 ## Updating from legacy (`import "appengine"`) packages
 
 If you're currently using the bare `appengine` packages
-(that is, not these ones, imported via `google.golang.org/appengine`),
+(that is, not these ones, imported via `github.com/sgtsquiggs/appengine`),
 then you can use the `aefix` tool to help automate an upgrade to these packages.
 
-Run `go get google.golang.org/appengine/cmd/aefix` to install it.
+Run `go get github.com/sgtsquiggs/appengine/cmd/aefix` to install it.
 
 ### 1. Update import paths
 
-The import paths for App Engine packages are now fully qualified, based at `google.golang.org/appengine`.
+The import paths for App Engine packages are now fully qualified, based at `github.com/sgtsquiggs/appengine`.
 You will need to update your code to use import paths starting with that; for instance,
-code importing `appengine/datastore` will now need to import `google.golang.org/appengine/datastore`.
+code importing `appengine/datastore` will now need to import `github.com/sgtsquiggs/appengine/datastore`.
 
 ### 2. Update code using deprecated, removed or modified APIs
 
@@ -52,7 +52,7 @@ Most App Engine services are available with exactly the same API.
 A few APIs were cleaned up, and there are some differences:
 
 * `appengine.Context` has been replaced with the `Context` type from `golang.org/x/net/context`.
-* Logging methods that were on `appengine.Context` are now functions in `google.golang.org/appengine/log`.
+* Logging methods that were on `appengine.Context` are now functions in `github.com/sgtsquiggs/appengine/log`.
 * `appengine.Timeout` has been removed. Use `context.WithTimeout` instead.
 * `appengine.Datacenter` now takes a `context.Context` argument.
 * `datastore.PropertyLoadSaver` has been simplified to use slices in place of channels.
@@ -68,14 +68,14 @@ A few APIs were cleaned up, and there are some differences:
 * Most of `appengine/file` and parts of `appengine/blobstore` are deprecated.
   Use [Google Cloud Storage](https://godoc.org/cloud.google.com/go/storage) if the
   feature you require is not present in the new
-  [blobstore package](https://google.golang.org/appengine/blobstore).
+  [blobstore package](https://github.com/sgtsquiggs/appengine/blobstore).
 * `appengine/socket` is not required on App Engine flexible environment / Managed VMs.
   Use the standard `net` package instead.
 
 ## Key Encode/Decode compatibiltiy to help with datastore library migrations
 
-Key compatibility updates have been added to help customers transition from google.golang.org/appengine/datastore to cloud.google.com/go/datastore.
-The `EnableKeyConversion` enables automatic conversion from a key encoded with cloud.google.com/go/datastore to google.golang.org/appengine/datastore key type.
+Key compatibility updates have been added to help customers transition from github.com/sgtsquiggs/appengine/datastore to cloud.google.com/go/datastore.
+The `EnableKeyConversion` enables automatic conversion from a key encoded with cloud.google.com/go/datastore to github.com/sgtsquiggs/appengine/datastore key type.
 
 ### Enabling key conversion
 

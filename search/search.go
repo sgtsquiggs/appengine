@@ -2,7 +2,7 @@
 // Use of this source code is governed by the Apache 2.0
 // license that can be found in the LICENSE file.
 
-package search // import "google.golang.org/appengine/search"
+package search // import "github.com/sgtsquiggs/appengine/search"
 
 // TODO: let Put specify the document language: "en", "fr", etc. Also: order_id?? storage??
 // TODO: Index.GetAll (or Iterator.GetAll)?
@@ -21,12 +21,12 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal"
-	pb "google.golang.org/appengine/internal/search"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal"
+	pb "github.com/sgtsquiggs/appengine/internal/search"
 )
 
 const maxDocumentsPerPutDelete = 200

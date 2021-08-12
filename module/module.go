@@ -8,14 +8,14 @@ Package module provides functions for interacting with modules.
 The appengine package contains functions that report the identity of the app,
 including the module name.
 */
-package module // import "google.golang.org/appengine/module"
+package module // import "github.com/sgtsquiggs/appengine/module"
 
 import (
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal"
-	pb "google.golang.org/appengine/internal/modules"
+	"github.com/sgtsquiggs/appengine/internal"
+	pb "github.com/sgtsquiggs/appengine/internal/modules"
 )
 
 // List returns the names of modules belonging to this application.

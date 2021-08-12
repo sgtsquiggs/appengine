@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal"
-	"google.golang.org/appengine/internal/aetesting"
-	pb "google.golang.org/appengine/internal/taskqueue"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal/aetesting"
+	pb "github.com/sgtsquiggs/appengine/internal/taskqueue"
 )
 
 func TestAddErrors(t *testing.T) {

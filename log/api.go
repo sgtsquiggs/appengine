@@ -9,7 +9,7 @@ package log
 import (
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal"
 )
 
 // Debugf formats its arguments according to the format, analogous to fmt.Printf,

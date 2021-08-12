@@ -11,11 +11,11 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 
-	"google.golang.org/appengine/internal"
-	"google.golang.org/appengine/internal/aetesting"
-	pb "google.golang.org/appengine/internal/user"
+	"github.com/sgtsquiggs/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal/aetesting"
+	pb "github.com/sgtsquiggs/appengine/internal/user"
 )
 
 func baseReq() *http.Request {

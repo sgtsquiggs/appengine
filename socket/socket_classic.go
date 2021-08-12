@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal"
 
-	pb "google.golang.org/appengine/internal/socket"
+	pb "github.com/sgtsquiggs/appengine/internal/socket"
 )
 
 // Dial connects to the address addr on the network protocol.

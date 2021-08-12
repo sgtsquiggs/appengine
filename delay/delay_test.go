@@ -17,11 +17,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal"
-	"google.golang.org/appengine/taskqueue"
+	"github.com/sgtsquiggs/appengine/internal"
+	"github.com/sgtsquiggs/appengine/taskqueue"
 )
 
 type CustomType struct {

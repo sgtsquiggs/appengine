@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 
-	pb "google.golang.org/appengine/internal/log"
+	pb "github.com/sgtsquiggs/appengine/internal/log"
 )
 
 func TestQueryToRequest(t *testing.T) {

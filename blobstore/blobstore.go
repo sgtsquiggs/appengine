@@ -4,7 +4,7 @@
 
 // Package blobstore provides a client for App Engine's persistent blob
 // storage service.
-package blobstore // import "google.golang.org/appengine/blobstore"
+package blobstore // import "github.com/sgtsquiggs/appengine/blobstore"
 
 import (
 	"bufio"
@@ -22,16 +22,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 	"golang.org/x/text/encoding/htmlindex"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/datastore"
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/datastore"
+	"github.com/sgtsquiggs/appengine/internal"
 
-	basepb "google.golang.org/appengine/internal/base"
-	blobpb "google.golang.org/appengine/internal/blobstore"
+	basepb "github.com/sgtsquiggs/appengine/internal/base"
+	blobpb "github.com/sgtsquiggs/appengine/internal/blobstore"
 )
 
 const (

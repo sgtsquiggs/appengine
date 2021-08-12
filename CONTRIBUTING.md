@@ -3,10 +3,10 @@
 1. Sign one of the contributor license agreements below.
 1. Get the package:
 
-    `go get -d google.golang.org/appengine`
+    `go get -d github.com/sgtsquiggs/appengine`
 1. Change into the checked out source:
 
-    `cd $GOPATH/src/google.golang.org/appengine`
+    `cd $GOPATH/src/github.com/sgtsquiggs/appengine`
 1. Fork the repo.
 1. Set your fork as a remote:
 
@@ -26,7 +26,7 @@ Set the `APPENGINE_DEV_APPSERVER` environment variable to `/path/to/go_appengine
 Run tests with `goapp test`:
 
 ```
-goapp test -v google.golang.org/appengine/...
+goapp test -v github.com/sgtsquiggs/appengine/...
 ```
 
 ## Contributor License Agreements

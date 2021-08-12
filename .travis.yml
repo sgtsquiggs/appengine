@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: google.golang.org/appengine
+go_import_path: github.com/sgtsquiggs/appengine
 
 install:
   - ./travis_install.sh

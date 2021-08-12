@@ -16,7 +16,7 @@ import (
 	"appengine_internal"
 	basepb "appengine_internal/base"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	netcontext "golang.org/x/net/context"
 )
 

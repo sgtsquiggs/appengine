@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal"
 )
 
 // NewInstance launches a running instance of api_server.py which can be used
@@ -290,6 +290,6 @@ handlers:
 
 const appSource = `
 package main
-import "google.golang.org/appengine"
+import "github.com/sgtsquiggs/appengine"
 func main() { appengine.Main() }
 `

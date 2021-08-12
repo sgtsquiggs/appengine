@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal/aetesting"
-	pb "google.golang.org/appengine/internal/system"
+	"github.com/sgtsquiggs/appengine/internal/aetesting"
+	pb "github.com/sgtsquiggs/appengine/internal/system"
 )
 
 func TestRunInBackgroundSendFirst(t *testing.T) { testRunInBackground(t, true) }

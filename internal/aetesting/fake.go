@@ -12,10 +12,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine/internal"
 )
 
 // FakeSingleContext returns a context whose Call invocations will be serviced

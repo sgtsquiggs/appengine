@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/appengine"
+	"github.com/sgtsquiggs/appengine"
 )
 
 // Instance represents a running instance of the development API Server.

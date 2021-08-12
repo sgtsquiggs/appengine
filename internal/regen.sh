@@ -2,9 +2,9 @@
 #
 # This script rebuilds the generated code for the protocol buffers.
 # To run this you will need protoc and goprotobuf installed;
-# see https://github.com/golang/protobuf for instructions.
+# see https://github.com/sgtsquiggs/protobuf for instructions.
 
-PKG=google.golang.org/appengine
+PKG=github.com/sgtsquiggs/appengine
 
 function die() {
 	echo 1>&2 $*

@@ -10,7 +10,7 @@ package cloudpb
 import (
 	"fmt"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 )
 
 // A partition ID identifies a grouping of entities. The grouping is always

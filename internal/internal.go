@@ -11,9 +11,9 @@ package internal
 import (
 	"fmt"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 
-	remotepb "google.golang.org/appengine/internal/remote_api"
+	remotepb "github.com/sgtsquiggs/appengine/internal/remote_api"
 )
 
 // errorCodeMaps is a map of service name to the error code map for the service.

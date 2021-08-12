@@ -22,7 +22,7 @@ To receive messages,
 		// ...
 	}
 */
-package xmpp // import "google.golang.org/appengine/xmpp"
+package xmpp // import "github.com/sgtsquiggs/appengine/xmpp"
 
 import (
 	"errors"
@@ -31,9 +31,9 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/internal"
-	pb "google.golang.org/appengine/internal/xmpp"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/internal"
+	pb "github.com/sgtsquiggs/appengine/internal/xmpp"
 )
 
 // Message represents an incoming chat message.

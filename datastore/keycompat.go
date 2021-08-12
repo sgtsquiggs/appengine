@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/appengine/datastore/internal/cloudkey"
-	"google.golang.org/appengine/internal"
+	"github.com/sgtsquiggs/appengine/datastore/internal/cloudkey"
+	"github.com/sgtsquiggs/appengine/internal"
 )
 
 var keyConversion struct {

@@ -12,8 +12,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
-	cloudpb "google.golang.org/appengine/datastore/internal/cloudpb"
+	"github.com/sgtsquiggs/protobuf/proto"
+	cloudpb "github.com/sgtsquiggs/appengine/datastore/internal/cloudpb"
 )
 
 /////////////////////////////////////////////////////////////////////

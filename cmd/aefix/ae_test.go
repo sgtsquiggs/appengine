@@ -42,9 +42,9 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/datastore"
-	"google.golang.org/appengine/log"
+	"github.com/sgtsquiggs/appengine"
+	"github.com/sgtsquiggs/appengine/datastore"
+	"github.com/sgtsquiggs/appengine/log"
 )
 
 func f(w http.ResponseWriter, r *http.Request) {
@@ -75,7 +75,7 @@ func LogSomething(c2 appengine.Context) {
 
 import (
 	"golang.org/x/net/context"
-	"google.golang.org/appengine/log"
+	"github.com/sgtsquiggs/appengine/log"
 )
 
 func LogSomething(c2 context.Context) {
@@ -103,7 +103,7 @@ func f(ctx appengine.Context) {
 
 import (
 	"golang.org/x/net/context"
-	"google.golang.org/appengine/taskqueue"
+	"github.com/sgtsquiggs/appengine/taskqueue"
 )
 
 func f(ctx context.Context) {
@@ -132,7 +132,7 @@ func f(ctx appengine.Context, w io.Writer) {
 
 import (
 	"golang.org/x/net/context"
-	"google.golang.org/appengine"
+	"github.com/sgtsquiggs/appengine"
 	"io"
 )
 

@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"golang.org/x/net/context"
-	"google.golang.org/appengine/datastore"
+	"github.com/sgtsquiggs/appengine/datastore"
 )
 
 func TestAppIDRE(t *testing.T) {

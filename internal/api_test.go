@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/proto"
 	netcontext "golang.org/x/net/context"
 
-	basepb "google.golang.org/appengine/internal/base"
-	remotepb "google.golang.org/appengine/internal/remote_api"
+	basepb "github.com/sgtsquiggs/appengine/internal/base"
+	remotepb "github.com/sgtsquiggs/appengine/internal/remote_api"
 )
 
 const testTicketHeader = "X-Magic-Ticket-Header"
